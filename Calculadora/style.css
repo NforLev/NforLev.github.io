@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(19, 19, 19, 0.5);
+    border-radius: 10px;
+}
+
+
+.displayContainer {
+    height: 120px;
+}
+
+.memoryDisplay {
+    text-align: end;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.resultDisplay {
+    text-align: end;
+    font-size: 40px;
+    margin: 25px 10px 5px 5px;
+}
+
+.buttonContainer {
+    display: grid;
+    grid-template-columns: 225px, 75px;
+    height: 375px;
+    width: 300px;
+}
+
+button {
+    font-size: 20px;
+    width: 75px;
+    height: 75px;
+    border: none;
+}
+
+button:hover{
+    background-color: rgba(13, 188, 211, 0.11);
+    font-weight: bold;
+}
+
+.back{
+    grid-row: 1/1;
+    grid-column: 2/3;
+    width: 75px;
+    background-color: rgba(99, 95, 95, 0.356);
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.clearAll{
+    grid-column: 1/2;
+    grid-row: 1/1;
+    width: 225px;
+    background-color: rgba(247, 144, 144, 0.582);
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+ .numbersContainer {
+    display: grid;
+    grid-template-columns:repeat(3, 75px);
+    grid-template-rows:repeat(4, 75px);
+}
+
+.operatorsContainer {
+    display: grid;
+    grid-template-columns: 75px;
+}
+
+#equal{
+    background-color: rgba(81, 184, 243, 0.829);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+#equal:hover{
+    background-color: rgba(13, 188, 211, 0.11);
+    color: black;
+}
+
+.operator{
+    background-color: rgba(109, 193, 241, 0.493);
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.numbers{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
